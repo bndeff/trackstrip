@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">URL Cleaner</string>
+    <string name="help_text">Share or open a URL with this app. The following parameters will
+        be stripped and the clean URL reopened with the app of your choice.</string>
+    <string name="add_param">Add new parameter</string>
+    <string name="edit_param">Edit parameter</string>
+    <string name="button_add">Add</string>
+    <string name="button_update">Update</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="desc_literal">exact match</string>
+    <string name="desc_prefix">starts with pattern</string>
+    <string name="desc_suffix">ends with pattern</string>
+    <string name="desc_contains">contains pattern</string>
+    <string name="desc_regex">regular expression</string>
+    <string name="desc_broken">internal error, you should not see this</string>
+    <string name="hint_pattern">pattern</string>
+    <string name="error_regex">Invalid regular expression</string>
+    <string name="error_save">Unable to save patterns</string>
+    <string name="error_load">Unable to load patterns</string>
+    <string name="init_patterns">[[1, "utm_"], [0, "fbclid"]]</string>
+    <string name="init_regex">utm_.*|fbclid</string>
+    <string name="pref_file">preferences</string>
+    <string name="pref_patterns">patterns</string>
+    <string name="pref_regex">regex</string>
+</resources>
