@@ -30,6 +30,7 @@ public class LinkFilter {
 
     public Uri processUri(Uri uri) {
         String q = uri.getQuery();
+        if(q == null) return uri;
         Uri.Builder b = uri.buildUpon();
         StringBuilder qb = new StringBuilder();
         for (String p: q.split("&")) {
