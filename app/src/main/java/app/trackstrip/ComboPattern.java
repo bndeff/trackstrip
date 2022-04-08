@@ -3,7 +3,7 @@ package app.trackstrip;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import java.util.List;
+import java.util.Arrays;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
@@ -45,7 +45,7 @@ public class ComboPattern {
     }
 
     public JSONArray toJSON() {
-        return new JSONArray(List.of(mode.getIndex(), value));
+        return new JSONArray(Arrays.asList(mode.getIndex(), value));
     }
 
     public static ComboPattern fromJSON(JSONArray json) throws JSONException {

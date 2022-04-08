@@ -13,7 +13,7 @@ public enum PatternMode {
     CONTAINS,
     REGEX;
 
-    private static final EnumMap<PatternMode, Integer> icons = new EnumMap<PatternMode, Integer>(PatternMode.class);
+    private static final EnumMap<PatternMode, Integer> icons = new EnumMap<>(PatternMode.class);
     static {
         icons.put(PatternMode.DISABLED, R.drawable.ic_broken);
         icons.put(PatternMode.LITERAL, R.drawable.ic_literal);
@@ -23,7 +23,7 @@ public enum PatternMode {
         icons.put(PatternMode.REGEX, R.drawable.ic_regex);
     }
 
-    private static final EnumMap<PatternMode, Integer> desc = new EnumMap<PatternMode, Integer>(PatternMode.class);
+    private static final EnumMap<PatternMode, Integer> desc = new EnumMap<>(PatternMode.class);
     static {
         desc.put(PatternMode.DISABLED, R.string.desc_broken);
         desc.put(PatternMode.LITERAL, R.string.desc_literal);
@@ -33,7 +33,7 @@ public enum PatternMode {
         desc.put(PatternMode.REGEX, R.string.desc_regex);
     }
 
-    private static final EnumMap<PatternMode, Integer> indices = new EnumMap<PatternMode, Integer>(PatternMode.class);
+    private static final EnumMap<PatternMode, Integer> indices = new EnumMap<>(PatternMode.class);
     private static final List<PatternMode> modes = new ArrayList<>();
     static {
         for(PatternMode mode : PatternMode.values()) {
